@@ -1,74 +1,101 @@
-<html lang="en"><head>
-    <meta charset="UTF-8">
-    <title>婚贝</title>
-    <link rel="stylesheet" href="https://h5.hunbei4.com/static/hunbei/css/common.css">
-    <link rel="stylesheet" href="https://h5.hunbei4.com/static/hunbei/css/view.css?v=1">
-    <!--link rel="stylesheet" href="style.css"-->
-    <script src="https://cdn.hunbei4.com/qrcode.min.js"></script>
-    <script src="https://cdn.hunbei4.com/jquery.min.js"></script>
-</head>
-<body>
-<div class="view-bg-cont" style="width: 100%; height: 100%;">
-    <div class="view-center" style="width: 100%; height: 100%;">
-        <div class="main-left" style="width: 100%">
-            <div class="qj" style="">
-                <iframe src="https://h5.hunbei4.com/app/A1312V3W5zr8P" width="100%" height="100%" id="iframe-view"></iframe>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <!--meta http-equiv="refresh" content="2;url=https://h5.hunbei4.com/app/A1312V3W5zr8P" /-->
+        <title>Old page</title>
+    </head>
+    <body>
+        <div class=form id=formOuter>
+            <div class=formHeader> RSVP </div>
+            <div class="formMain1">
+                <div class=attendance>
+                    <input type="radio" id="coming" name="fav_language" value="coming" onclick="checkRadio()">
+                    <label for="coming" class=Coming>Of course, I/We will attend</label>
+                    <input type="radio" id="notComing" name="fav_language" value="notComing" onclick="checkRadio()">
+                    <label for="notComing" class=NotComing>Sorry, unable to make it</label>
+                </div>
+                <div class="formComing">
 
+                    <div id=attendees class=attendees>
+                        <form method="POST" action="https://script.google.com/macros/s/AKfycbyDmZoNsXVtx6F2Knyk0mikmpIwa_zwFf0QQj2aIEsnKJa7Jj-kCh5QRXXG8pGFVAwx/exec" id="form" class="form0">
+                            <div id=attendee1 class=attendee1>
+                                <div class=attendeeTitle0 id="attendeeTitle"><u class=atnheader> Guest </u><u> 1: </u></div>
+                                <input type="text" id="fname" name="0[firstn]" placeholder="Name" class="firstname0 firstName" required>
+                                <!--input type="text" id="fname" name="1[firstn]" placeholder="Name" class="firstname0 firstName" required-->
+                                <div class=RelationshipWithGroomAndBride>
+                                    <div class="Relationship"> 
+                                        <div class=RelationshipWithGroom>Groom's side <br> (For Seating Arrangement)<br><br></div>
+                                        <input type="radio" class="relationship0 relationship" name="0[Rela]" value="familyOrCousinWithGroom" required>
+                                        <label for="familyOrCousinWithGroom" class=familyOrCousinWithGroom>Groom's Family / Relatives</label><br>
+                                        <input type="radio" class="relationship0 relationship" name="0[Rela]" value="PCFWithGroom">
+                                        <label for="PCFWithGroom" class=PCFWithGroom>Groom's Primary School Friends</label><br>
+                                        <input type="radio" class=" relationship0 relationship" name="0[Rela]" value="SCFWithGroom">
+                                        <label for="SCFWithGroom" class=SCFWithGroom>Groom's Secondary School Friends</label><br>
+                                        <input type="radio" class="relationship0 relationship" name="0[Rela]" value="UniFWithGroom">
+                                        <label for="UniFWithGroom" class=UniFWithGroom>Groom's University Friends</label><br>
+                                        <input type="radio" class="relationship0 relationship" name="0[Rela]" value="ColleagueWithGroom">
+                                        <label for="ColleagueWithGroom" class=ColleagueWithGroom>Groom's Colleague</label><br>
+                                        <input type="radio" class="relationship0 relationship" name="0[Rela]" value="ExColleagueWithGroom">
+                                        <label for="ExColleagueWithGroom" class=ExColleagueWithGroom>Groom's Ex-Colleague</label><br>
+                                        <input type="radio" class="relationship0 relationship" name="0[Rela]" value="OthersWithGroom">
+                                        <label for="OthersWithGroom" class=OthersWithGroom>Others</label><br>
+                                    </div>
+                                    <div class="Relationship">
+                                        <div class=RelationshipWithBride>Bride's side <br> (For Seating Arrangement)<br><br></div>
+                                        <input type="radio" class="relationship0 relationship" name="0[Rela]" value="familyOrCousinWithBride">
+                                        <label for="familyOrCousinWithBride" class=familyOrCousinWithBride>Bride's Family / Relatives</label><br>
+                                        <input type="radio" class="relationship0 relationship" name="0[Rela]" value="PCFWithBride">
+                                        <label for="PCFWithBride" class=PCFWithBride>Bride's Primary School Friends</label><br>
+                                        <input type="radio" class="relationship0 relationship" name="0[Rela]" value="SCFWithBride">
+                                        <label for="SCFWithBride" class=SCFWithBride>Bride's Secondary School Friends</label><br>
+                                        <input type="radio" class="relationship0 relationship" name="0[Rela]" value="UniFWithBride">
+                                        <label for="UniFWithBride" class=UniFWithBride>Bride's University Friends</label><br>
+                                        <input type="radio" class="relationship0 relationship" name="0[Rela]" value="ColleagueWithBride">
+                                        <label for="ColleagueWithBride" class=ColleagueWithBride>Bride's Colleague</label><br>
+                                        <input type="radio" class="relationship0 relationship" name="0[Rela]" value="ExColleagueWithBride">
+                                        <label for="ExColleagueWithBride" class=ExColleagueWithBride>Bride's Ex-Colleague</label><br>
+                                        <input type="radio" class="relationship0 relationship" name="0[Rela]" value="OthersWithBride">
+                                        <label for="OthersWithBride" class=OthersWithBride>Others</label><br>
+                                    </div>
+                                </div>
+                                <div class=vegetarian>
+                                    <input type="checkbox" class="vege0 vege" name="0[vege]" value="vege">
+                                    <label for="vege" class="vegeWording"> Vegetarian</label><br>
+                                </div> 
+                                <input id="Relationship" name="Relationship" type="text" placeholder="Relationship" class="hidingSubmit Relationship0">
+                                <input id="FirstName" name="FirstName" type="text" placeholder="Name" class="hidingSubmit FirstName0">
+                                <input id="Vege" name="Vege" type="text" placeholder="Vege" class="hidingSubmit Vege0">
+                                <input id="Comments" name="Comments" type="text" placeholder="Comments" class="hidingSubmit Commentsfinal0">
+                                <input id="ComingNotComing" name="ComingNotComing" type="text" placeholder="ComingNotComing" class="hidingSubmit ComingNotComing0">
+                                <button type="submit" class="hidingSubmitsss0 hidingSubmit" id="asdasd">Send</button>
+                            </div>
+                        </form>   
+                    </div>
+                    <button type="button" class="button" id="button">
+                    <span class="button__text">Guest +1</span>
+                    <span class="button__icon">
+                        <img src="https://dl.dropbox.com/s/yapvdxt1liziqk0/plus.png" width="3px" heigh="3px" class="plusImage">
+                    </span>
+                    </button>
+                    <textarea name="message" rows="1" class=comments placeholder="Remarks"></textarea>
+                <!-- <input type="CommentText" id="Comments" name="Comments" placeholder="Help us know you a little more"> -->
+
+                    
+                </div>
+                <div class=formNotComing>
+                    <input type="text" id="attendanceCount" name="attendanceCountNotComing" class="attendanceCount" placeholder="Name">
+                </div>
+                <button class="submit" id="submit" onclick="formSubmission(0)"> Submit </button>
+                <br>
             </div>
         </div>
-    </div>
-</div>
-<script>
-    //判断是否是微信浏览器的函数
-    function isWeiXin(){
-        var ua = window.navigator.userAgent.toLowerCase();
-        if(ua.match(/MicroMessenger/i) == 'micromessenger'){
-            return true;
-        }else{
-            return false;
-        }
-    }
-    $('#1663314861421').click(function(){
-        console.log("pressed")
-    });
-    //1663314861421
-    //ele-form f-submit eles
-    //http://127.0.0.1:8080/Main.html
-    // pc微信打开，隐藏预览模块
-    // if(isWeiXin()){
-    //     $('.view-center').addClass('wechat-show');
-    //     $('.sao-title').html('手机扫一扫查看请柬')
-
-    // }else{
-    //     $('.sao-title').html('手机扫一扫分享给朋友')
-    // }
-
-    $('.sao-title').html('手机扫一扫分享给朋友');
-    if(isWeiXin()){
-        $('.make-btn1').hide()
-    }
-
-    window.addEventListener('message',function (event ) {
-        // 判断有无数据
-        if(event.data.count){
-            //  数据在event.data对象中
-            var curPage = event.data.cur;
-            var allPage = event.data.count;
-            $("#curpage").html(curPage+1);
-            $("#totalpage").html(allPage);
-        }
-    })
-    var flipState = false;
-    var time;
-    function fliPage(point) {
-        if(flipState) return false;
-        var dom = $('#iframe-view')[0];
-        dom.contentWindow.postMessage(point,'*');
-        flipState=true;
-        clearTimeout(time);
-        time=setTimeout(function(){flipState = false;},700);
-    }
-
-</script>
-
-</body></html>
+        <script>
+            ////http://127.0.0.1:8080/Main.html
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"defer></script>
+        <script src="script.js"></script> 
+    </body>
+</html>
