@@ -1,39 +1,21 @@
 <html lang="en"><head>
     <meta charset="UTF-8">
     <title>婚贝</title>
-    <link rel="stylesheet" href="/static/hunbei/css/common.css">
-    <link rel="stylesheet" href="/static/hunbei/css/view.css?v=1">
+    <link rel="stylesheet" href="https://h5.hunbei.com/static/hunbei/css/common.css">
+    <link rel="stylesheet" href="https://h5.hunbei.com/static/hunbei/css/view.css?v=1">
+    <!--link rel="stylesheet" href="style.css"-->
     <script src="https://cdn.hunbei.com/qrcode.min.js"></script>
     <script src="https://cdn.hunbei.com/jquery.min.js"></script>
 </head>
 <body>
-<div class="view-bg-cont">
-    <div class="view-center">
-        <div class="main-left">
-            <div class="qj">
-                <iframe src="https://h5.hunbei.com/app/A1312V3W5zr8P?state=1A&amp;uniqid=1671939874" width="375" height="603" id="iframe-view"></iframe>
-            </div>
-            <div class="qj-title">
-                爱意定格❤️婚礼长页            </div>
-        </div>
-        <div class="view-page">
-            <div class="text-shu" onclick="fliPage('down')">上一页</div>
-            <div><span id="curpage">1</span>/<span id="totalpage">2</span></div>
-            <div class="text-shu" onclick="fliPage('up')">下一页</div>
-        </div>
-        <div class="main-right">
-            <div class="qcrode-main" style="padding: 0 20px;margin-top: 180px;">
-                <div id="qrcode" style="margin-top: 20px;" title="https://h5.hunbei4.com/app/A1312V3W5zr8P">
-
-                <canvas width="200" height="200" style="display: none;"></canvas><img src="data:image/png;base64,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" style="display: block;"></div>
-                <div class="sao-title">手机扫一扫分享给朋友</div>
-                <div class="save-btn" onclick="downloadImage()">
-                    点击保存二维码
-                </div>
-            </div>
-
-            <div class="make-btn1" style="margin-top: 30px;">
-                <a href="/all/template">我要制作</a>
+<div class="view-bg-cont" style="height:100%;">
+    <div class="view-center" style="height:100%;">
+        <div class="main-left" style="height:100%;">
+            <div class="qj" style="height:100%;">
+                <iframe src="https://h5.hunbei.com/app/A1312V3W5zr8P?state=1A&amp;uniqid=1671888562" width="375" height="100%" id="iframe-view"></iframe>
+                    <div class="sdfsdf">
+                        sdasdasdasdasda
+                    </div>
             </div>
         </div>
     </div>
@@ -48,6 +30,12 @@
             return false;
         }
     }
+    $('#1663314861421').click(function(){
+        console.log("pressed")
+    });
+    //1663314861421
+    //ele-form f-submit eles
+    //http://127.0.0.1:8080/Main.html
     // pc微信打开，隐藏预览模块
     // if(isWeiXin()){
     //     $('.view-center').addClass('wechat-show');
@@ -82,20 +70,7 @@
         clearTimeout(time);
         time=setTimeout(function(){flipState = false;},700);
     }
-    var qrcode = new QRCode('qrcode', {
-        text: 'https://h5.hunbei4.com/app/A1312V3W5zr8P',
-        width: 200,
-        height: 200,
-        colorDark : '#000000',
-        colorLight : '#ffffff',
-    });
-    function downloadImage() {
-        var imgSrc = $("#qrcode img").attr("src");
-        var a = $("<a></a>").attr("href", imgSrc).attr("download", "二维码.png").appendTo("body");
 
-        a[0].click();
-        a.remove();
-    }
 </script>
 
 </body></html>
