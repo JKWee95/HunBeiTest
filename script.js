@@ -1,10 +1,9 @@
 window.onload = function() {
 
 	document.querySelector(".form").style.setProperty('width', (document.body.clientWidth)*0.71 +"px");
-	document.querySelector(".form").style.setProperty('height', (document.body.clientWidth)*0.9 +"px");
-	if (document.getElementById('formOuter').clientHeight >= (document.body.clientHeight)*0.8){
-		document.querySelector(".form").style.setProperty('height', (document.body.clientHeight)*0.5 +"px");
-	}
+	//if (document.getElementById('formOuter').clientHeight >= (document.body.clientHeight)*0.8){
+	//	document.querySelector(".form").style.setProperty('height', (document.body.clientHeight)*0.5 +"px");
+	//}
 	document.querySelector(".formHeader").style.setProperty('font-size', (document.body.clientWidth)*0.08 +"px");
 	document.querySelector(".attendance").style.setProperty('font-size', (document.body.clientWidth)*0.025 +"px");
 	document.querySelector(".firstName").style.setProperty('font-size', (document.body.clientWidth)*0.03 +"px");
@@ -25,10 +24,9 @@ window.onload = function() {
 		
 
 		document.querySelector(".form").style.setProperty('width', (document.body.clientWidth)*0.71 +"px");
-		document.querySelector(".form").style.setProperty('height', (document.body.clientWidth)*0.9 +"px");
-		if (document.getElementById('formOuter').clientHeight >= (document.body.clientHeight)*0.8){
-			document.querySelector(".form").style.setProperty('height', (document.body.clientHeight)*0.5 +"px");
-		}
+		//if (document.getElementById('formOuter').clientHeight >= (document.body.clientHeight)*0.8){
+		//	document.querySelector(".form").style.setProperty('height', (document.body.clientHeight)*0.5 +"px");
+		//}
 		document.querySelector(".formHeader").style.setProperty('font-size', (document.body.clientWidth)*0.08 +"px");
 		document.querySelector(".attendance").style.setProperty('font-size', (document.body.clientWidth)*0.025 +"px");
 		document.querySelector(".firstName").style.setProperty('font-size', (document.body.clientWidth)*0.03 +"px");
