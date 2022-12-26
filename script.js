@@ -6,7 +6,9 @@ window.onload = function() {
 	//}
 	document.querySelector(".formHeader").style.setProperty('font-size', (document.body.clientWidth)*0.08 +"px");
 	document.querySelector(".attendance").style.setProperty('font-size', (document.body.clientWidth)*0.025 +"px");
-	document.querySelector(".firstName").style.setProperty('font-size', (document.body.clientWidth)*0.03 +"px");
+	document.querySelector(".firstName").style.setProperty('font-size', (document.body.clientWidth)*0.02 +"px");
+	document.querySelector(".attendanceCount").style.setProperty('font-size', (document.body.clientWidth)*0.02 +"px");
+	document.querySelector(".comments").style.setProperty('font-size', (document.body.clientWidth)*0.02 +"px");
 	document.querySelector(".formMain1").style.setProperty('font-size', (document.body.clientWidth)*0.02 +"px");
 	document.querySelector(".button__text").style.setProperty('font-size', (document.body.clientWidth)*0.02 +"px");
 	document.querySelector(".submit").style.setProperty('font-size', (document.body.clientWidth)*0.035 +"px");
@@ -29,7 +31,9 @@ window.onload = function() {
 		//}
 		document.querySelector(".formHeader").style.setProperty('font-size', (document.body.clientWidth)*0.08 +"px");
 		document.querySelector(".attendance").style.setProperty('font-size', (document.body.clientWidth)*0.025 +"px");
-		document.querySelector(".firstName").style.setProperty('font-size', (document.body.clientWidth)*0.03 +"px");
+		document.querySelector(".firstName").style.setProperty('font-size', (document.body.clientWidth)*0.02 +"px");
+		document.querySelector(".attendanceCount").style.setProperty('font-size', (document.body.clientWidth)*0.02 +"px");
+		document.querySelector(".comments").style.setProperty('font-size', (document.body.clientWidth)*0.02 +"px");
 		document.querySelector(".formMain1").style.setProperty('font-size', (document.body.clientWidth)*0.02 +"px");
 		document.querySelector(".button__text").style.setProperty('font-size', (document.body.clientWidth)*0.02 +"px");
 		document.querySelector(".submit").style.setProperty('font-size', (document.body.clientWidth)*0.035 +"px");
